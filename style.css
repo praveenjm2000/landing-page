@@ -5,6 +5,7 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 ul {
@@ -12,15 +13,17 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-}
-
-li {
-    padding: 10px;
+    flex-grow: 0;
 }
 
 a{
     text-decoration: none;
     color: #dadada;
+    font-size: 18px;
+    margin: 10px;
+}
+a:hover {
+    color: #F9FAF8;
 }
 
 .block{
@@ -30,7 +33,16 @@ a{
     justify-content: center;
 }
 
-.header, .hero, .footer {
+.hero{
+    background-image: url(./img/munnar-g8ceaaa26c_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.header{
+    background-color: #1f2937b9;
+}
+
+.footer {
     background-color: #1F2937;
 }
 .header{
@@ -50,19 +62,21 @@ a{
     justify-content: center;
     align-items: center;
 }
-
-.hero1 {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 700;
+.hcontent {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+}
+.hero1 {
+    font-size: 58px;
+    color: #ffffffe1;
+    font-weight: 700;
 }
 
 P {
-    color: #E5E7EB;
+    color: #ffffffd8;
     font-size: 18px;
+    font-weight: 400;
 }
 
 button {
@@ -80,6 +94,7 @@ button {
     font-size: 36px;
     font-weight: 700;
     padding: 20px;
+    color: #3882F6;
 }
 
 .card, .rinfo {
@@ -92,13 +107,13 @@ button {
     height: 500px;
 }
 
-.icard {
+img {
     width: 200px;
-    height: 200px;
+    height: 230px;
     margin: 25px;
     margin-bottom: 5px;
     border: 2px solid;
-    border-color: #3882F6;
+    border-color: #757b85;
     border-radius: 5px;
 }
 
@@ -108,12 +123,14 @@ button {
 }
 .quote {
     background-color: #E5E7EB;
-    font-size: 36px;
-    font-style: italic;
 }
 
-.quote text {
+.quote-text {
     color: #1F2937;
+    font-size: 28px;
+    font-style: italic;
+    text-align: center;
+    margin: 10px;
 }
 .act {
     height: 300px;
@@ -131,18 +148,25 @@ button {
     width: 900px;
     border-radius: 10px;
     box-shadow: 2px;
-    gap: 20px;
+    gap: 40px;
 }
 .actbox text {
-    color: #FFFFFF;
+    color: #F9FAF8;
 }
-
+.actbox text:first-child{
+    font-weight: bold;
+}
+.acttext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .actbox button{
     border: 2px solid;
-    border-color: #FFFFFF;
+    border-color: #F9FAF8;
 }
 button:hover{
-    background-color: #FFFFFF;
+    background-color: #F9FAF8;
     color: #3882F6;
     font-weight: 500;
 }
