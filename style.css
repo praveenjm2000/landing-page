@@ -69,12 +69,12 @@ a:hover {
 }
 .hero1 {
     font-size: 58px;
-    color: #ffffffe1;
+    color: #F9FAF8;
     font-weight: 700;
 }
 
 P {
-    color: #ffffffd8;
+    color: #F9FAF8;
     font-size: 18px;
     font-weight: 400;
 }
@@ -94,7 +94,8 @@ button {
     font-size: 36px;
     font-weight: 700;
     padding: 20px;
-    color: #3882F6;
+    color: #1F2937;
+    ;
 }
 
 .card, .rinfo {
